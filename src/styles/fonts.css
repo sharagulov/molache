@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'VelaSans';
+	src: url('../public/fonts/vela_sans/VelaSans/Variable/VelaSans-GX.ttf') format('opentype');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'novoposelensky';
+	src: url('../public/fonts/novoposelensky/Novoposelensky.otf') format('opentype');
+	font-style: normal;
+}
