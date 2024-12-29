@@ -26,8 +26,10 @@
 	},
 	"dependencies": {
 		"@types/three": "^0.171.0",
+		"dom-to-image": "^2.6.0",
 		"gltf": "^1.0.3",
 		"gsap": "^3.12.5",
+		"html2canvas": "^1.4.1",
 		"three": "^0.171.0"
 	}
 }

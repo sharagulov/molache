@@ -1,57 +1,7 @@
 body {
-	font-family: 'VelaSans', sans-serif;
+	font-family: 'chetkiy', sans-serif;
 	font-weight: 200;
-	background-color: #000;
-	color: white;
 	height: 100vh !important;
 	cursor: crosshair;
 	font-size: 16px;
-}
-
-.primary-color {
-	background-color: #211c1e;
-}
-.accent-color {
-	background-color: #1e181b;
-}
-.grey-color {
-	background-color: #1a1a1a;
-}
-
-h1,
-h2,
-h3 {
-	font-weight: 200;
-}
-h1 {
-	font-size: 50px;
-	font-weight: bold;
-	font-family: novoposelensky;
-}
-h2 {
-	font-size: 36px;
-	font-weight: bold;
-}
-h3 {
-	font-size: 16px;
-	font-weight: bold;
-}
-
-.borderable {
-	border: 0.1px solid;
-	border-color: transparent;
-	padding: 10px;
-}
-
-.borderable:hover {
-	border-color: white;
-}
-
-@media (max-width: 1500px) {
-	h1 {
-		font-size: 3vw;
-	}
-	p {
-		font-size: 2vw;
-	}
 }

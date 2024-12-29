@@ -1,13 +1,15 @@
 <script>
-	import Ring from '../lib/components/Ring.svelte';
+	import Scene from '../lib/components/Scene.svelte';
 </script>
 
 <div class="scroll-container">
-	<div>asdsa</div>
 	<div class="ring-container">
-		<Ring />
+		<Scene />
 	</div>
-	<!-- Дополнительный контент для скролла можно добавить здесь -->
+	<div class="center-content">
+		<!-- <CenterContent /> Новый компонент с div-контейнерами -->
+	</div>
+	<div class="content">Прокрутите вниз, чтобы увидеть эффект вращения кольца.</div>
 </div>
 
 <style>
@@ -24,5 +26,10 @@
 		width: 100%;
 		height: 100%;
 		pointer-events: none; /* Чтобы скролл был доступен через кольцо */
+		z-index: -1;
+	}
+
+	.content {
+		z-index: 1;
 	}
 </style>

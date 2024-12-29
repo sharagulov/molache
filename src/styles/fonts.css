@@ -9,3 +9,14 @@
 	src: url('../public/fonts/novoposelensky/Novoposelensky.otf') format('opentype');
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'chetkiy';
+	src: url('/fonts/chetkiy/CHETKIYTYPEFACE.ttf') format('opentype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'chetkiy-italic';
+	src: url('/fonts/chetkiy/CHETKIYTYPEFACEITALIC.ttf') format('opentype');
+	font-style: italic;
+}
