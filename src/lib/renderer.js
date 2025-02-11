@@ -9,6 +9,7 @@ export function getRenderer() {
 		renderer = new THREE.WebGLRenderer({ antialias: true });
 		renderer.toneMapping = THREE.ACESFilmicToneMapping;
 		renderer.toneMappingExposure = 0.5;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); 
 		renderer.setSize(window.innerWidth, window.innerHeight);
 	}
 	return renderer;
