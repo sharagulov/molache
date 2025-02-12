@@ -263,12 +263,8 @@
 		}
 
      function preanimate() {
-      scrollerMesh.scale.set(0, 0, 0);
       gsap.to(model.scale, { x: 5, y: 5, z: 5, duration: 2, ease: 'power2.out' });
       gsap.to(model.rotation, { x: 0, y: 0.3, z: 0.3, duration: 3, ease: 'power2.out' });
-      setTimeout(() => {
-        gsap.to(scrollerMesh.scale, { x: 1, y: 1, z: 1, duration: 2, ease: 'power2.out' });
-      }, 500);
     }
 
     Promise.all([createSceneAndCamera(), loadHDRI(), composeAll(), addRing(), addScroller(), sleep(1000)]).then(async () => {
