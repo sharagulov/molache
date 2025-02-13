@@ -25,6 +25,7 @@
 -->
 
 <script>
+  import { scroll } from '../stores/scroll.js';
 	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
   import { gsap } from 'gsap'
@@ -243,12 +244,12 @@
 			if (time - lastTime > frameInterval) {
 				lastTime = time;
 				currentRingRotation = lerp(currentRingRotation, targetRingRotation, 0.05);
-				currentScroll = lerp(currentScroll, targetScroll, 0.1);
+				currentScroll = lerp(currentScroll, targetScroll, 1);
 				if (model) {
 					model.rotation.x = currentRingRotation;
 				}
 				if (scrollerMesh) {
-					scrollerMesh.position.y = currentScroll - 30;
+					scrollerMesh.position.y = $scroll.current - 30;
 				}
 
         scene.background = new THREE.Color(0x000000);

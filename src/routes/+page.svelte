@@ -1,5 +1,6 @@
 <script>
 	import Scene from '../lib/components/Scene.svelte';
+	import Ghost from '../lib/components/Ghost.svelte';
   import { isLoaded } from '../lib/stores/loading.js';
   console.log(isLoaded)
 </script>
@@ -9,14 +10,14 @@
 		<Scene />
 	</div>
 	<div class="center-content">
-		<!-- <CenterContent /> Новый компонент с div-контейнерами -->
+    <Ghost />
 	</div>
   <div class="black-cover" class:loaded={$isLoaded}></div>
 </div>
 
 <style>
 	.scroll-container {
-		height: 200vh; /* Удваиваем высоту окна для вертикального скролла */
+		height: 260vh;
 		position: relative;
 	}
 
